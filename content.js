@@ -7,8 +7,9 @@ window.siteContent = {
   papers: [
     {
       title: 'Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?',
-      authors: 'Perry Dong, Ron Polonsky, Dorsa Sadigh, Chelsea Finn',
+      authors: 'Perry Dong*, Ron Polonsky*, Dorsa Sadigh, Chelsea Finn',
       venue: 'arXiv preprint · 2026',
+      note: '* Equal contribution',
       description: 'Studying when Q-function pretraining helps online reinforcement learning. Initialization via Policy Ensemble (IPE) uses rollouts from diverse policies to improve Q-function initialization and subsequent fine-tuning.',
       tags: ['Reinforcement Learning'],
       links: [

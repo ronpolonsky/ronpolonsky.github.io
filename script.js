@@ -71,6 +71,7 @@
       body.append(authors);
     }
     if (paper.venue) body.append(el('p', 'meta', paper.venue));
+    if (paper.note) body.append(el('p', 'meta', paper.note));
     if (paper.description) body.append(el('p', '', paper.description));
     const links = el('div', 'pills');
     addLinks(links, paper.links);
