@@ -4,6 +4,13 @@ window.siteContent = {
     'I am an M.S. student in Computer Science at Stanford University, where I am advised by Chelsea Finn. My research focuses on reinforcement learning. Previously, I earned a B.S. in Computer Science from Stanford University.',
     'I am also a 2024 European Champion, a two-time Olympic swimmer (Paris and Tokyo), and a five-time Stanford school record holder.',
   ],
+  acknowledged: [
+    {
+      title: 'Vascular waveform analysis using Bayesian pulse deconvolution',
+      subtitle: 'Insights and feedback · npj Digital Medicine, 2026',
+      links: [{ label: 'Paper', url: 'https://www.nature.com/articles/s41746-026-03213-0' }],
+    },
+  ],
   portrait: '', // e.g. assets/portrait.jpg
   links: [{ label: 'SwimCloud', url: 'https://www.swimcloud.com/swimmer/1163268/times/' }],
   researchIntro: '',

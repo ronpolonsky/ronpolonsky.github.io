@@ -103,7 +103,7 @@
       filters.append(button);
     }
   }
-  for (const key of ['education', 'experience', 'service', 'teaching']) {
+  for (const key of ['acknowledged', 'education', 'experience', 'service', 'teaching']) {
     const entries = data[key] || [];
     if (!entries.length) continue;
     const target = document.getElementById(`${key}-list`);
@@ -119,6 +119,11 @@
       if (entry.date) body.append(el('p', 'meta', entry.date));
       if (entry.gpa) body.append(el('p', 'meta', entry.gpa));
       if (entry.description) body.append(el('p', '', entry.description));
+      if (entry.links?.length) {
+        const links = el('div', 'pills');
+        addLinks(links, entry.links);
+        if (links.children.length) body.append(links);
+      }
       article.append(body);
       target.append(article);
     }
