@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ron Polonsky</title>
+  <meta name="description" content="Ron Polonsky’s personal website: research, education, and experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>try { if(localStorage.getItem('theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch {}</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="#top">Ron Polonsky</a>
+      <div class="nav-links">
+        <a href="#top" aria-current="location">Home</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <button id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.8 13A8.8 8.8 0 0 1 11 3.2 8.8 8.8 0 1 0 20.8 13Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <section id="top" class="intro" aria-labelledby="name">
+      <div class="intro-text">
+        <h1 id="name">Ron Polonsky</h1>
+        <p id="bio" class="muted">Welcome to my personal website. Biography coming soon.</p>
+        <nav id="profile-links" class="pills" aria-label="Contact and profiles"><a href="https://github.com/ronpolonsky">GitHub</a></nav>
+      </div>
+    </section>
+    <section id="research" class="section" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p id="research-intro" hidden></p>
+      <div id="filters" class="pills filters" role="group" aria-label="Filter research" hidden></div>
+      <div id="papers" class="papers"><p class="empty">Research and publications will be added here.</p></div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+    </section>
+    <section id="education" class="section" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div id="education-list" class="entries"><p class="empty">Education details coming soon.</p></div>
+    </section>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <h3 class="subheading">Research &amp; Industry</h3>
+      <div id="experience-list" class="entries"><p class="empty">Experience details coming soon.</p></div>
+      <div id="service-section" hidden><h3 class="subheading">Community Service</h3><div id="service-list" class="entries"></div></div>
+      <div id="teaching-section" hidden><h3 class="subheading">Teaching</h3><div id="teaching-list" class="entries"></div></div>
+    </section>
+    <noscript><p class="empty">Enable JavaScript to load additional profile details and research.</p></noscript>
+  </main>
+  <footer>© <span id="year">2026</span> Ron Polonsky</footer>
+</body>
+</html>
