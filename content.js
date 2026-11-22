@@ -7,7 +7,7 @@ window.siteContent = {
   acknowledged: [
     {
       title: 'Vascular waveform analysis using Bayesian pulse deconvolution',
-      subtitle: 'Insights and feedback · npj Digital Medicine, 2026',
+      subtitle: 'Insights and feedback · Nature, 2026',
       links: [{ label: 'Paper', url: 'https://www.nature.com/articles/s41746-026-03213-0' }],
     },
   ],
