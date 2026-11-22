@@ -35,7 +35,7 @@
     if (Array.isArray(data.bio)) {
       bio.replaceChildren(...data.bio.map((paragraph, index) => {
         const p = el('p');
-        const advisorName = 'Chelsea Finn';
+        const advisorName = 'Prof. Chelsea Finn';
         const advisorIndex = index === 0 && data.advisorUrl ? paragraph.indexOf(advisorName) : -1;
         if (advisorIndex < 0) {
           p.textContent = paragraph;
