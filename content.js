@@ -1,7 +1,7 @@
 // Add your actual details here. Text is rendered as text, not HTML.
 window.siteContent = {
   bio: [
-    'I am an M.S. student in Computer Science at Stanford University, where I am advised by Chelsea Finn. I previously earned a B.S. in Computer Science from Stanford University, and my research focuses on reinforcement learning.',
+    'I am an M.S. student in Computer Science at Stanford University, advised by Chelsea Finn. I previously earned a B.S. in Computer Science, also from Stanford University. My research focuses on reinforcement learning.',
     'I was also a competitive swimmer: I am a 2024 European Champion, a two-time Olympic swimmer (Paris and Tokyo), and a five-time Stanford school record holder.',
   ],
   acknowledged: [
