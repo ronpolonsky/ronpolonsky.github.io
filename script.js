@@ -35,16 +35,17 @@
     if (Array.isArray(data.bio)) {
       bio.replaceChildren(...data.bio.map((paragraph, index) => {
         const p = el('p');
-        const advisorName = 'Prof. Chelsea Finn';
-        const advisorIndex = index === 0 && data.advisorUrl ? paragraph.indexOf(advisorName) : -1;
-        if (advisorIndex < 0) {
+        const linkedPhrase = index === 0 ? 'Prof. Chelsea Finn' : index === 1 ? 'five-time Stanford school record holder' : '';
+        const linkedURL = index === 0 ? data.advisorUrl : index === 1 ? data.recordUrl : '';
+        const linkedIndex = linkedURL ? paragraph.indexOf(linkedPhrase) : -1;
+        if (linkedIndex < 0) {
           p.textContent = paragraph;
           return p;
         }
-        p.append(document.createTextNode(paragraph.slice(0, advisorIndex)));
-        const advisor = el('a', '', advisorName);
-        advisor.href = safeURL(data.advisorUrl);
-        p.append(advisor, document.createTextNode(paragraph.slice(advisorIndex + advisorName.length)));
+        p.append(document.createTextNode(paragraph.slice(0, linkedIndex)));
+        const link = el('a', '', linkedPhrase);
+        link.href = safeURL(linkedURL);
+        p.append(link, document.createTextNode(paragraph.slice(linkedIndex + linkedPhrase.length)));
         return p;
       }));
     } else bio.textContent = data.bio;

@@ -5,6 +5,7 @@ window.siteContent = {
     'I was also a competitive swimmer: I am a 2024 European Champion, a two-time Olympian (Paris and Tokyo), and a five-time Stanford school record holder.',
   ],
   advisorUrl: 'https://ai.stanford.edu/~cbfinn/',
+  recordUrl: 'https://gostanford.com/sports/mens-swimming-diving/roster/player/ron-polonsky',
   acknowledged: [
     {
       title: 'Vascular waveform analysis using Bayesian pulse deconvolution',
