@@ -1,6 +1,6 @@
 // Add your actual details here. Text is rendered as text, not HTML.
 window.siteContent = {
-  bio: 'Welcome to my personal website. Biography coming soon.',
+  bio: 'I am an M.S. student in Computer Science at Stanford University, advised by Chelsea Finn. My research focuses on reinforcement learning. Before this, I completed my B.S. in Computer Science at Stanford University.',
   portrait: '', // e.g. assets/portrait.jpg
   links: [{ label: 'GitHub', url: 'https://github.com/ronpolonsky' }],
   researchIntro: '',
