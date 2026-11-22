@@ -1,6 +1,6 @@
 # Ron Polonsky’s website
 
-A dependency-free personal website for GitHub Pages. Layout inspired by https://khhung-906.github.io/, with an original implementation.
+A dependency-free personal website for GitHub Pages with an original academic portfolio layout.
 
 ## Content
 
