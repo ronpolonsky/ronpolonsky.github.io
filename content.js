@@ -2,7 +2,7 @@
 window.siteContent = {
   bio: [
     'I am an M.S. student in Computer Science at Stanford University, where I am advised by Chelsea Finn. I previously earned a B.S. in Computer Science from Stanford University, and my research focuses on reinforcement learning.',
-    'I was also a competitive swimmer. I am a 2024 European Champion, a two-time Olympic swimmer (Paris and Tokyo), and a five-time Stanford school record holder.',
+    'I was also a competitive swimmer: I am a 2024 European Champion, a two-time Olympic swimmer (Paris and Tokyo), and a five-time Stanford school record holder.',
   ],
   acknowledged: [
     {
