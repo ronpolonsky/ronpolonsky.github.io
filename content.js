@@ -6,6 +6,7 @@ window.siteContent = {
   ],
   advisorUrl: 'https://ai.stanford.edu/~cbfinn/',
   recordUrl: 'https://gostanford.com/sports/mens-swimming-diving/roster/player/ron-polonsky',
+  europeanUrl: 'https://www.len.eu/belgrade2024/medals/#/athlete-details/157645',
   acknowledged: [
     {
       title: 'Vascular waveform analysis using Bayesian pulse deconvolution',

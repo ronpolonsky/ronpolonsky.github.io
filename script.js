@@ -35,17 +35,28 @@
     if (Array.isArray(data.bio)) {
       bio.replaceChildren(...data.bio.map((paragraph, index) => {
         const p = el('p');
-        const linkedPhrase = index === 0 ? 'Prof. Chelsea Finn' : index === 1 ? 'five-time Stanford school record holder' : '';
-        const linkedURL = index === 0 ? data.advisorUrl : index === 1 ? data.recordUrl : '';
-        const linkedIndex = linkedURL ? paragraph.indexOf(linkedPhrase) : -1;
-        if (linkedIndex < 0) {
+        const linkSpecs = index === 0
+          ? [{ phrase: 'Prof. Chelsea Finn', url: data.advisorUrl }]
+          : index === 1
+            ? [{ phrase: '2024 European Champion', url: data.europeanUrl }, { phrase: 'five-time Stanford school record holder', url: data.recordUrl }]
+            : [];
+        const matches = linkSpecs
+          .map(spec => ({ ...spec, index: spec.url ? paragraph.indexOf(spec.phrase) : -1 }))
+          .filter(spec => spec.index >= 0)
+          .sort((a, b) => a.index - b.index);
+        if (!matches.length) {
           p.textContent = paragraph;
           return p;
         }
-        p.append(document.createTextNode(paragraph.slice(0, linkedIndex)));
-        const link = el('a', '', linkedPhrase);
-        link.href = safeURL(linkedURL);
-        p.append(link, document.createTextNode(paragraph.slice(linkedIndex + linkedPhrase.length)));
+        let cursor = 0;
+        for (const match of matches) {
+          p.append(document.createTextNode(paragraph.slice(cursor, match.index)));
+          const link = el('a', '', match.phrase);
+          link.href = safeURL(match.url);
+          p.append(link);
+          cursor = match.index + match.phrase.length;
+        }
+        p.append(document.createTextNode(paragraph.slice(cursor)));
         return p;
       }));
     } else bio.textContent = data.bio;
