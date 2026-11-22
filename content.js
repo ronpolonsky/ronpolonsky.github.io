@@ -2,7 +2,7 @@
 window.siteContent = {
   bio: [
     'I am an M.S. student in Computer Science at Stanford University, working with Prof. Chelsea Finn. I previously earned a B.S. in Computer Science, also from Stanford University. My research focuses on Reinforcement Learning.',
-    'I was also a competitive swimmer:\nI am a 2024 European Champion, a two-time Olympian (Paris and Tokyo), and a 5-time Stanford school record holder.',
+    'I was also a competitive swimmer:\nI am a European Champion (2024), a two-time Olympian (Paris and Tokyo), and a 5-time Stanford school record holder.',
   ],
   advisorUrl: 'https://ai.stanford.edu/~cbfinn/',
   recordUrl: 'https://gostanford.com/sports/mens-swimming-diving/roster/player/ron-polonsky',
