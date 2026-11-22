@@ -8,3 +8,4 @@
 @media(max-width:700px){.paper{padding:16px}}
  .paper{align-items:flex-start;text-align:left}.paper-image{align-self:flex-start}
  .nav-inner{justify-content:flex-end}
+ .container,.nav-inner,footer{margin-left:0;margin-right:0}.nav-inner{justify-content:flex-start}
