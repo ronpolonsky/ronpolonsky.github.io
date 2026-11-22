@@ -118,15 +118,6 @@
     }
   }
   document.getElementById('year').textContent = new Date().getFullYear();
-  const toggle = document.getElementById('theme-toggle');
-  const syncTheme = () => toggle.setAttribute('aria-pressed', String(document.documentElement.dataset.theme === 'dark'));
-  syncTheme();
-  toggle.addEventListener('click', () => {
-    const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = theme;
-    try { localStorage.setItem('theme', theme); } catch {}
-    syncTheme();
-  });
   const navLinks = [...document.querySelectorAll('.nav-links a')];
   const updateNavigation = () => {
     let current = '#top';
