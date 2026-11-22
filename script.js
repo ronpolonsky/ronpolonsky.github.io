@@ -30,7 +30,12 @@
     image.loading = 'lazy';
     parent.append(image);
   };
-  if (data.bio) document.getElementById('bio').textContent = data.bio;
+  if (data.bio) {
+    const bio = document.getElementById('bio');
+    if (Array.isArray(data.bio)) {
+      bio.replaceChildren(...data.bio.map(paragraph => el('p', '', paragraph)));
+    } else bio.textContent = data.bio;
+  }
   if (data.portrait) {
     const portrait = document.getElementById('portrait');
     portrait.replaceChildren();
