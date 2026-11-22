@@ -6,3 +6,4 @@
  .paper-body>p:not(.meta){font-size:14px;line-height:1.55}
  .paper{gap:18px;padding:16px}.paper-image{width:180px}
 @media(max-width:700px){.paper{padding:16px}}
+ .paper{align-items:flex-start;text-align:left}.paper-image{align-self:flex-start}
