@@ -38,6 +38,7 @@ window.siteContent = {
       title: 'Stanford University',
       subtitle: 'Bachelor of Science in Computer Science',
       date: 'Spring 2026',
+      image: 'assets/stanford.png',
     },
   ],
   experience: [],
