@@ -41,7 +41,7 @@ window.siteContent = {
       title: 'Stanford University',
       subtitle: 'B.S. in Computer Science',
       date: 'Spring 2026',
-      gpa: 'GPA: 4.14/4.0',
+      gpa: 'GPA: 4.14 / 4.0',
       image: 'assets/stanford.png',
     },
   ],
