@@ -38,7 +38,7 @@
         const linkSpecs = index === 0
           ? [{ phrase: 'Prof. Chelsea Finn', url: data.advisorUrl }]
           : index === 1
-            ? [{ phrase: '2024 European Champion', url: data.europeanUrl }, { phrase: 'five-time Stanford school record holder', url: data.recordUrl }]
+            ? [{ phrase: 'European Champion', url: data.europeanUrl }, { phrase: 'Stanford school record holder', url: data.recordUrl }]
             : [];
         const matches = linkSpecs
           .map(spec => ({ ...spec, index: spec.url ? paragraph.indexOf(spec.phrase) : -1 }))
