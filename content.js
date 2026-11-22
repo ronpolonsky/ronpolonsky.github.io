@@ -21,7 +21,7 @@ window.siteContent = {
       title: 'Document Optimization for Black-Box Retrieval via Reinforcement Learning',
       authors: 'Omri Uzan, Ron Polonsky, Douwe Kiela, Christopher Potts',
       venue: 'arXiv preprint · 2026',
-      description: 'DocOpt trains language and vision-language models to rewrite documents for better retrieval. It learns from black-box ranking feedback, shifting rewriting offline and improving code and visual retrieval.',
+      description: 'We fine-tune LMs with RL to rewrite documents into better representations for a target black-box retriever, allowing smaller retrievers to match or beat larger retrievers on code and visual document retrieval tasks.',
       tags: ['Reinforcement Learning', 'Information Retrieval'],
       links: [
         { label: 'Paper', url: 'https://arxiv.org/abs/2604.05087' },
