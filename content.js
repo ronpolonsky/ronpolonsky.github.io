@@ -12,7 +12,7 @@ window.siteContent = {
     },
   ],
   portrait: '', // e.g. assets/portrait.jpg
-  links: [{ label: 'SwimCloud', url: 'https://www.swimcloud.com/swimmer/1163268/times/' }],
+  links: [{ label: 'SwimCloud', url: 'https://www.swimcloud.com/swimmer/1163268/meets/?year=2024&name=' }],
   researchIntro: '',
   papers: [
     {
