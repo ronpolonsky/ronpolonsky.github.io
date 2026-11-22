@@ -51,15 +51,21 @@
           });
           return p;
         }
+        const appendText = text => {
+          text.split('\n').forEach((line, lineIndex) => {
+            if (lineIndex) p.append(document.createElement('br'));
+            p.append(document.createTextNode(line));
+          });
+        };
         let cursor = 0;
         for (const match of matches) {
-          p.append(document.createTextNode(paragraph.slice(cursor, match.index)));
+          appendText(paragraph.slice(cursor, match.index));
           const link = el('a', '', match.phrase);
           link.href = safeURL(match.url);
           p.append(link);
           cursor = match.index + match.phrase.length;
         }
-        p.append(document.createTextNode(paragraph.slice(cursor)));
+        appendText(paragraph.slice(cursor));
         return p;
       }));
     } else bio.textContent = data.bio;
