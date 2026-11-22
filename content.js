@@ -5,7 +5,7 @@ window.siteContent = {
     'I am also a 2024 European Champion, a two-time Olympic swimmer (Paris and Tokyo), and a five-time Stanford school record holder.',
   ],
   portrait: '', // e.g. assets/portrait.jpg
-  links: [{ label: 'SwimCloud', url: 'https://www.swimcloud.com/swimmer/1163268/' }],
+  links: [{ label: 'SwimCloud', url: 'https://www.swimcloud.com/swimmer/1163268/times/' }],
   researchIntro: '',
   papers: [
     {
