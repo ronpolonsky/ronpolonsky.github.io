@@ -112,6 +112,7 @@
       body.append(el('h3', '', entry.title));
       if (entry.subtitle) body.append(el('p', '', entry.subtitle));
       if (entry.date) body.append(el('p', 'meta', entry.date));
+      if (entry.gpa) body.append(el('p', 'meta', entry.gpa));
       if (entry.description) body.append(el('p', '', entry.description));
       article.append(body);
       target.append(article);
