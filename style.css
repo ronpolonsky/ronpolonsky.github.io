@@ -7,9 +7,4 @@
  .paper{gap:18px;padding:16px}.paper-image{width:180px}
 @media(max-width:700px){.paper{padding:16px}}
  .paper{align-items:flex-start;text-align:left}.paper-image{align-self:flex-start}
-/* Ron Polonsky visual direction: warm editorial palette and sharper card geometry. */
-:root{--bg:#fbfaf7;--bottom:#f3efe8;--text:#17202b;--muted:#5f6873;--accent:#c65d2e;--border:#d9d5cd;--card:#fffdfa;--chip:#c9c4ba;--tint:#f2e7dd;--heading:Georgia,'Times New Roman',serif}
-body{font-family:Inter,system-ui,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bottom)) fixed}
-.topbar{position:relative;background:var(--bg);backdrop-filter:none;border-bottom:1px solid var(--text)}
-.topbar::after{display:none}.nav-inner{max-width:1120px;min-height:72px}.brand{font-family:var(--heading);font-size:20px;border-left:0;border-bottom:3px solid var(--accent);padding:0 0 4px}.nav-links{gap:28px}.nav-links>a{font-size:13px;text-transform:uppercase;letter-spacing:.08em}.container{max-width:1120px;padding-top:72px}.intro{gap:0}.intro-text{max-width:760px}.intro-text h1{font-family:var(--heading);font-size:48px;font-weight:500;letter-spacing:-.035em}.muted{font-size:17px;max-width:720px}.muted p{margin:0 0 18px}.section{margin-top:64px}.section h2{font-family:var(--heading);font-size:28px;font-weight:500;border-bottom:1px solid var(--border);padding-bottom:14px}.section h2::after{width:56px;height:4px;border-radius:0}.paper,.entry{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0;box-shadow:0 8px 20px rgba(23,32,43,.05)}.paper-image{border-radius:0}.paper h3,.entry h3{font-family:var(--heading);font-size:20px;font-weight:600}.paper h3 a{color:var(--text)}.pills a{border-radius:3px;background:transparent}.pills a:hover{background:var(--tint)}footer{max-width:1072px}
  .nav-inner{justify-content:flex-end}
