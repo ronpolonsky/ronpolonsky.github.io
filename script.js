@@ -33,7 +33,20 @@
   if (data.bio) {
     const bio = document.getElementById('bio');
     if (Array.isArray(data.bio)) {
-      bio.replaceChildren(...data.bio.map(paragraph => el('p', '', paragraph)));
+      bio.replaceChildren(...data.bio.map((paragraph, index) => {
+        const p = el('p');
+        const advisorName = 'Chelsea Finn';
+        const advisorIndex = index === 0 && data.advisorUrl ? paragraph.indexOf(advisorName) : -1;
+        if (advisorIndex < 0) {
+          p.textContent = paragraph;
+          return p;
+        }
+        p.append(document.createTextNode(paragraph.slice(0, advisorIndex)));
+        const advisor = el('a', '', advisorName);
+        advisor.href = safeURL(data.advisorUrl);
+        p.append(advisor, document.createTextNode(paragraph.slice(advisorIndex + advisorName.length)));
+        return p;
+      }));
     } else bio.textContent = data.bio;
   }
   if (data.portrait) {
