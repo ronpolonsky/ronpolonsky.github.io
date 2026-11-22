@@ -11,6 +11,7 @@ window.siteContent = {
       venue: 'arXiv preprint · 2026',
       note: '* Equal contribution',
       description: 'Shows that standard Q-function pretraining gives little benefit over random initialization, and introduces Initialization via Policy Ensemble (IPE), which bootstraps Q-learning from the pooled rollouts of several diverse pretrained policies for more effective online RL fine-tuning.',
+      image: 'assets/ipe.png',
       tags: ['Reinforcement Learning'],
       links: [
         { label: 'Paper', url: 'https://arxiv.org/abs/2607.27203' },
@@ -22,6 +23,7 @@ window.siteContent = {
       authors: 'Omri Uzan, Ron Polonsky, Douwe Kiela, Christopher Potts',
       venue: 'arXiv preprint · 2026',
       description: 'We fine-tune LMs with RL to rewrite documents into better representations for a target black-box retriever, allowing smaller retrievers to match or beat larger retrievers on code and visual document retrieval tasks.',
+      image: 'assets/docopt.png',
       tags: ['Reinforcement Learning', 'Information Retrieval'],
       links: [
         { label: 'Paper', url: 'https://arxiv.org/abs/2604.05087' },
