@@ -30,7 +30,13 @@ window.siteContent = {
   ],
   // Paper: { title, authors, venue, description, image, tags: ['Robotics'],
   //          links: [{ label: 'Paper', url: 'https://...' }] }
-  education: [],
+  education: [
+    {
+      title: 'Stanford University',
+      subtitle: 'Bachelor of Science in Computer Science',
+      date: 'Spring 2026',
+    },
+  ],
   experience: [],
   service: [],
   teaching: [],
