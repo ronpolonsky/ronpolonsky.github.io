@@ -21,7 +21,7 @@ window.siteContent = {
       authors: 'Perry Dong*, Ron Polonsky*, Dorsa Sadigh, Chelsea Finn',
       venue: 'arXiv preprint · 2026',
       note: '* Equal contribution',
-      description: 'Shows that standard Q-function pretraining gives little benefit over random initialization, and introduces Initialization via Policy Ensemble (IPE), which bootstraps Q-learning from the pooled rollouts of several diverse pretrained policies for more effective online RL fine-tuning.',
+      description: 'Shows that standard Q-function pretraining gives little benefit over random initialization, and introduces Initialization via Policy Ensemble (IPE) for more effective online RL fine-tuning.',
       image: 'assets/ipe.png',
       tags: ['Reinforcement Learning'],
       links: [
