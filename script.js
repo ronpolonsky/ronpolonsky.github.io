@@ -81,7 +81,8 @@
     return { card, tags: paper.tags || [] };
   });
   const tags = [...new Set(papers.flatMap(p => p.tags || []))].filter(tag => tag !== 'All');
-  if (tags.length) {
+  const filters = document.getElementById('filters');
+  if (tags.length && filters) {
     const filters = document.getElementById('filters');
     filters.hidden = false;
     for (const tag of ['All', ...tags]) {
