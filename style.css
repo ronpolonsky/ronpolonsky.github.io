@@ -9,3 +9,4 @@
  .paper{align-items:flex-start;text-align:left}.paper-image{align-self:flex-start}
  .brand{border-left:0;padding-left:0}
  .nav-links>a{border-bottom-color:var(--border)}
+ .nav-links>a{ text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
