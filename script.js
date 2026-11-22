@@ -45,7 +45,10 @@
           .filter(spec => spec.index >= 0)
           .sort((a, b) => a.index - b.index);
         if (!matches.length) {
-          p.textContent = paragraph;
+          paragraph.split('\\n').forEach((line, lineIndex) => {
+            if (lineIndex) p.append(document.createElement('br'));
+            p.append(document.createTextNode(line));
+          });
           return p;
         }
         let cursor = 0;
